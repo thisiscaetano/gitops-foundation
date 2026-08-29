@@ -7,7 +7,7 @@ RUN curl --silent --fail --location \
     | tar -xz -C /usr/local/bin && \
     chmod +x /usr/local/bin/kustomize
 
-ADD entry.sh /entry.sh
+COPY entry.sh /entry.sh
 
 
 RUN chmod +x /entry.sh
