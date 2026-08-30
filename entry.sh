@@ -39,11 +39,6 @@ git pull origin main >> /tmp/log 2>&1 || {
     exit 1
 }
 
-git add datadog-version.yaml >> /tmp/log 2>&1 || {
-    cat /tmp/log
-    exit 1
-}
-
 git add kustomization.yaml >> /tmp/log 2>&1 || {
     cat /tmp/log
     exit 1
