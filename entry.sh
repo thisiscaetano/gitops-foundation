@@ -23,7 +23,7 @@ git checkout main >> /tmp/log 2>&1 || {
 git config user.name "GitOps Robot"
 git config user.email "bot@gitops.com"
 
-cd platform-lab-global-manifest/apps/$APP_NAME/overlays/$GLOBAL_MANIFEST_OVERLAY >> /tmp/log 2>&1 || {
+cd apps/$APP_NAME/overlays/$GLOBAL_MANIFEST_OVERLAY >> /tmp/log 2>&1 || {
     cat /tmp/log
     exit 1
 }
